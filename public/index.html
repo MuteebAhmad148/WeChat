@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>We Chat</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 style="text-align: center">We CHAT</h1>
+                <div  id="chatbox">
+                    <div style="text-align: center;border-bottom: 2px solid black"><h4>Chat Box</h4></div>
+                </div>
+                <br>
+                <form>
+                    <input type="text" id="msgToSent" placeholder="Text" onkeydown="userTyping()">
+                    <button id="btn" class="btn btn-success">Sent</button>
+                    <button id="locbtn" class="btn btn-secondary">Sent Location</button>
+                    <button class="btn btn-danger" id="clear" style="margin-top: 5px">Clear Chat</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+</html>
